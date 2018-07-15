@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteActivity">
+
+    <EditText
+        android:id="@+id/note_et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/note_et_content"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:hint="Description"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideInset"
+        android:singleLine="false"
+        />
+
+    <ImageView
+        android:id="@+id/note_img_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:saveEnabled="true"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+</LinearLayout>
